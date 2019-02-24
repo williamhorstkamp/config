@@ -1,2 +1,6 @@
-alias activate='source .venv/bin/activate'
+# creates pythn virtual env at this location
+alias pyvenv-create='python -m venv .venv'
+# activates python virtual env at this location
+alias pyvenv-activate='source .venv/bin/activate'
+# clear all docker containers and images
 alias docker-clean='docker rm -f $(docker ps -a -q) || true && docker rmi -f $(docker images -q) || true'
